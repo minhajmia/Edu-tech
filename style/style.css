@@ -27,6 +27,16 @@ img {
 .banner-caption {
     top: 30%;
 }
+.custom-modal-button {
+    padding: 13px 33px;
+    background-color: #ffffff !important;
+    color: #289BDE !important;
+}
+
+.custom-modal-button:hover {
+    background-color: #ffff !important;
+    color: #289BDE !important;
+}
 @media screen and (max-width:450px) {
     .banner-caption p {
         font-size: 14px;
