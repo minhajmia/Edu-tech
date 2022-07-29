@@ -1,0 +1,57 @@
+/* utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* banner style */
+.banner-img-item>img {
+    max-height: 600px;
+}
+
+.banner-img-item::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    opacity: 0.7;
+}
+
+.banner-caption {
+    top: 30%;
+}
+@media screen and (max-width:450px) {
+    .banner-caption p {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .banner-caption h1 {
+        font-size: 20px;
+    }
+    .banner-caption p {
+        font-size: 16px;
+    }
+    .banner-caption {
+        top: 10%;
+    }
+    .banner-caption {
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .banner-caption {
+        top: 20%;
+    }
+}
